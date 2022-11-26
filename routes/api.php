@@ -15,9 +15,3 @@ use App\Http\Controllers\ContactController;
 */
 
 Route::apiResource('/contact', ContactController::class);
-
-Route::get('/hello', function () {
-    return response()->json([
-        'message' => 'Hello'
-    ], 200);
-});
